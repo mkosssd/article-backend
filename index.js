@@ -8,7 +8,7 @@ const app = express();
 
 
 
-app.use(cors());
+app.use(cors({ origin: '*' }));
 dotenv.config({ path: './.env' });
 
 // Middleware to parse JSON
